@@ -1,7 +1,22 @@
 :root {
-  --Eerie-Black: #242423;
-  --Jet: #333533;
-  --Alabaster: #e8eddf;
+  --Eerie-Black: #252422;
+  --Jet: #403d39;
+  --Alabaster: #f4f3ee;
+  --Light-grey: #ccc5b9;
+  --Highlight: #eb5e28;
+}
+
+body {
+  background-color: var(--Alabaster);
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 .App {
@@ -10,70 +25,77 @@
 }
 
 .Header {
-  background-color: var(--Jet);
+  background-color: var(--Highlight);
   padding-bottom: 10px;
-  border: 1px solid;
 }
 
 .Header h1 {
   color: white;
-  margin-top: 5px;
-  border: 1px;
+  margin: 0;
   margin-bottom: 5px;
 }
 
-#Home-link {
-  color: var(--Alabaster);
-  text-decoration: none;
+.Tagline {
+  background-image: url('https://scontent.fbrs4-1.fna.fbcdn.net/v/t39.30808-6/337558507_940644260304778_4918124472323672833_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=NOkF9IYYfcYAX9JOGiL&_nc_ht=scontent.fbrs4-1.fna&oh=00_AfAGfXrpHEmCvEiiazQWWzaFD4XdOHliUEq0kV3mYcuRFA&oe=6431E60D');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  height: 500px;
+  clip-path: inset(0 0 80px 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#Gallery-link {
-  color: var(--Alabaster);
-  text-decoration: none;
-}
-#Gallery-link-home {
-  color: var(--Jet);
-  text-decoration: none;
-  border: 1px solid var(--Jet);
-  padding: 5px;
-}
-#Services-link {
-  color: var(--Alabaster);
-  text-decoration: none;
-}
-#Services-link-home {
-  color: var(--Jet);
-  text-decoration: none;
-  border: 1px solid var(--Jet);
-  padding: 5px;
-}
-#About-link {
-  color: var(--Alabaster);
-  text-decoration: none;
-}
-#Contact-link {
-  color: var(--Alabaster);
-  text-decoration: none;
-}
-#Contact-link-home {
-  color: var(--Alabaster);
-  text-decoration: none;
-  border: 1px solid var(--Alabaster);
-  padding: 5px;
+.OverlayBanner {
+  background-color: rgba(126, 126, 126, 0.693);
+  color: white;
+  padding: 20px 30px;
+  transform: translateY(-50px);
+  border: 10px rgba(255, 241, 219, 0.056);
+  border-style: solid;
+  width: 100vw;
 }
 
-.Hetas-section {
+.OverlayBanner h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.OverlayBanner p {
+  margin-bottom: 30px;
+  padding: 0 30px;
+}
+
+.OverlayBannerLink {
+  color: white;
   background-color: var(--Jet);
+  padding: 10px;
+  box-shadow: 3px 3px 1px 1px rgba(36, 36, 36, 0.349);
+  text-decoration: none;
+}
+
+.Hetas {
+  padding: 10px 10px;
+  margin-top: -50px;
+}
+
+.FeaturedHome {
+  background-color: var(--Jet);
+  padding: 0 0 20px 0;
   color: white;
 }
 
-.Cta-home {
-  background-color: var(--Jet);
+.FeaturedHomeLink {
   color: white;
+  padding: 10px;
+  border: 1px var(--Alabaster);
+  border-style:solid;
+  text-decoration: none;
 }
 
-.Services-icon {
-  width: 150px;
-  height: 150px;
-  background: var(--Jet);
-  border-radius: 50%;
+.FeaturedHome img {
+  clip-path: inset(80px 0px 80px 0px);
+  margin: -50px 0;
 }

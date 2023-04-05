@@ -60,7 +60,7 @@ export const fireCollection = [
     ],
     make_model: 'Wiking Miro 2',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipiscing, elit vitae euismod semper dignissim, curabitur augue lacus congue posuere. Ante orci feugiat sapien pellentesque bibendum malesuada lacinia porttitor auctor phasellus aenean vivamus maecenas, imperdiet habitant nisi dapibus tempor pulvinar parturient urna ad senectus vestibulum montes. Accumsan pellentesque leo vel fusce luctus maecenas risus cum, at ac praesent ligula sociosqu aenean nunc, inceptos ridiculus aliquet vitae euismod eros non.',
+      'Lorem ipsum dolor sit amet consectetur adipiscing, elit vitae euismod semper dignissim, curabitur augue lacus congue posuere.',
     date: 'Sept 2020',
     location: 'Trelleck',
     featured: true,
