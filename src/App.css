@@ -1,38 +1,79 @@
+:root {
+  --Eerie-Black: #242423;
+  --Jet: #333533;
+  --Alabaster: #e8eddf;
+}
+
 .App {
   text-align: center;
+  background-color: var(--Alabaster);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header {
+  background-color: var(--Jet);
+  padding-bottom: 10px;
+  border: 1px solid;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Header h1 {
+  color: white;
+  margin-top: 5px;
+  border: 1px;
+  margin-bottom: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#Home-link {
+  color: var(--Alabaster);
+  text-decoration: none;
+}
+#Gallery-link {
+  color: var(--Alabaster);
+  text-decoration: none;
+}
+#Gallery-link-home {
+  color: var(--Jet);
+  text-decoration: none;
+  border: 1px solid var(--Jet);
+  padding: 5px;
+}
+#Services-link {
+  color: var(--Alabaster);
+  text-decoration: none;
+}
+#Services-link-home {
+  color: var(--Jet);
+  text-decoration: none;
+  border: 1px solid var(--Jet);
+  padding: 5px;
+}
+#About-link {
+  color: var(--Alabaster);
+  text-decoration: none;
+}
+#Contact-link {
+  color: var(--Alabaster);
+  text-decoration: none;
+}
+#Contact-link-home {
+  color: var(--Alabaster);
+  text-decoration: none;
+  border: 1px solid var(--Alabaster);
+  padding: 5px;
+}
+
+.Hetas-section {
+  background-color: var(--Jet);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Cta-home {
+  background-color: var(--Jet);
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Services-icon {
+  width: 150px;
+  height: 150px;
+  background: var(--Jet);
+  border-radius: 50%;
 }
