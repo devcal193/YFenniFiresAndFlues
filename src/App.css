@@ -6,8 +6,9 @@
   --Highlight: #eb5e28;
 }
 
-body {
+body, html {
   background-color: var(--Alabaster);
+  min-width: 100%;
 }
 
 li {
@@ -22,6 +23,7 @@ ul {
 .App {
   text-align: center;
   background-color: var(--Alabaster);
+  width: inherit;
 }
 
 .Header {
