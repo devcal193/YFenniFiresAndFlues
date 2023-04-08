@@ -1,103 +1,199 @@
 :root {
-  --Eerie-Black: #252422;
-  --Jet: #403d39;
-  --Alabaster: #f4f3ee;
-  --Light-grey: #ccc5b9;
-  --Highlight: #eb5e28;
+   --Eerie-Black: #252422;
+   --Jet: #403d39;
+   --Jet-Button: #403d3981;
+   --Alabaster: #f4f3ee;
+   --Light-grey: #ccc5b9;
+   /* --Highlight: #56666B; */
+   --Highlight: #0f4c5c;
+   --Font-normal: "Playfair Display", serif;
 }
 
-body, html {
-  background-color: var(--Alabaster);
-  min-width: 100%;
+* {
+   margin: 0;
+   padding: 0;
+   font-family: var(--Font-normal);
+   letter-spacing: 1px;
+   font-weight: 400;
+}
+
+body,
+html {
+   background-color: var(--Alabaster);
+   min-width: 100%;
 }
 
 li {
-  list-style-type: none;
+   list-style-type: none;
 }
 
 ul {
-  padding: 0;
-  margin: 0;
+   padding: 0;
+   margin: 0;
+}
+
+a {
+   appearance: none;
+   background-color: var(--Jet-Button);
+   border-width: 0;
+   box-sizing: border-box;
+   color: var(--Alabaster);
+   cursor: pointer;
+   display: inline-block;
+   font-family: var(--Font-normal);
+   font-size: 20px;
+   letter-spacing: 1px;
+   line-height: 1em;
+   margin: 0;
+   opacity: 1;
+   outline: 0;
+   padding: 20px 30px;
+   position: relative;
+   text-align: center;
+   text-decoration: none;
+   text-rendering: geometricprecision;
+   text-transform: uppercase;
+   transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
+      background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
+      color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   vertical-align: baseline;
+   white-space: nowrap;
+}
+
+a:before {
+   animation: opacityFallbackOut 0.5s step-end forwards;
+   backface-visibility: hidden;
+   background-color: var(--Jet);
+   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   transform: translateZ(0);
+   transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+      -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+   width: 100%;
+}
+
+a:hover:before {
+   animation: opacityFallbackIn 0s step-start forwards;
+   clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+a:after {
+   background-color: var(--Jet-Button);
+}
+
+a:hover {
+   background-color: rgb(126, 126, 126, 0.693);
 }
 
 .App {
-  text-align: center;
-  background-color: var(--Alabaster);
-  width: inherit;
+   text-align: center;
+   background-color: var(--Alabaster);
+   width: inherit;
 }
 
 .Header {
-  background-color: var(--Highlight);
-  padding-bottom: 10px;
+   background-color: var(--Highlight);
+   padding-bottom: 10px;
+   border-bottom: 4px solid var(--Eerie-Black);
 }
 
 .Header h1 {
-  color: white;
-  margin: 0;
-  margin-bottom: 5px;
+   color: white;
+   margin: 0;
+   margin-bottom: 5px;
 }
 
 .Tagline {
-  background-image: url('https://scontent.fbrs4-1.fna.fbcdn.net/v/t39.30808-6/337558507_940644260304778_4918124472323672833_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=NOkF9IYYfcYAX9JOGiL&_nc_ht=scontent.fbrs4-1.fna&oh=00_AfAGfXrpHEmCvEiiazQWWzaFD4XdOHliUEq0kV3mYcuRFA&oe=6431E60D');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: black;
-  height: 500px;
-  clip-path: inset(0 0 80px 0);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+   background-image: url("https://scontent.fbrs4-1.fna.fbcdn.net/v/t39.30808-6/337558507_940644260304778_4918124472323672833_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=NOkF9IYYfcYAX9JOGiL&_nc_ht=scontent.fbrs4-1.fna&oh=00_AfAGfXrpHEmCvEiiazQWWzaFD4XdOHliUEq0kV3mYcuRFA&oe=6431E60D");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-color: black;
+   height: 500px;
+   clip-path: inset(0 0 80px 0);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 .OverlayBanner {
-  background-color: rgba(126, 126, 126, 0.693);
-  color: white;
-  padding: 20px 30px;
-  transform: translateY(-50px);
-  border: 10px rgba(255, 241, 219, 0.056);
-  border-style: solid;
-  width: 100vw;
+   background-color: rgba(126, 126, 126, 0.693);
+   color: white;
+   padding: 20px 0px;
+   transform: translateY(-50px);
+   border-top: 10px rgba(255, 241, 219, 0.056);
+   border-bottom: 10px rgba(255, 241, 219, 0.056);
+   border-left: 0;
+   border-right: 0;
+
+   border-style: solid;
+   width: 100%;
 }
 
 .OverlayBanner h1 {
-  margin: 0;
-  padding: 0;
+   margin: 0;
+   padding-bottom: 20px;
 }
 
 .OverlayBanner p {
-  margin-bottom: 30px;
-  padding: 0 30px;
+   margin-bottom: 30px;
+   padding: 0 30px;
 }
 
-.OverlayBannerLink {
-  color: white;
-  background-color: var(--Jet);
-  padding: 10px;
-  box-shadow: 3px 3px 1px 1px rgba(36, 36, 36, 0.349);
-  text-decoration: none;
+.OverlayBannerLink:before {
+   content: "our services";
 }
 
 .Hetas {
-  padding: 10px 10px;
-  margin-top: -50px;
+   padding: 10px 10px;
+   margin-top: -50px;
 }
 
 .FeaturedHome {
-  background-color: var(--Jet);
-  padding: 0 0 20px 0;
-  color: white;
+   background-image: url("./Images/annie-spratt-L6GydBHMVGQ-unsplash.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-top: 10px solid var(--Jet);
+   border-bottom: 10px solid var(--Jet);
+   background-color: var(--Jet);
+   color: white;
+   height: 580px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
 }
 
-.FeaturedHomeLink {
-  color: white;
-  padding: 10px;
-  border: 1px var(--Alabaster);
-  border-style:solid;
-  text-decoration: none;
+.FeaturedHomeLink:before {
+   content: "view gallery";
 }
 
 .FeaturedHome img {
-  clip-path: inset(80px 0px 80px 0px);
-  margin: -50px 0;
+   width: 90vw;
+   height: 300px;
+   object-fit: cover;
+   object-position: 0 50%;
+   border: solid 2px rgba(75, 71, 67, 0.692);
+   border-style: outset;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.747);
+}
+
+.FeaturedHome h2 {
+}
+
+.FeaturedHome h3 {
+}
+
+.FeaturedHome p {
+   padding-bottom: 20px;
+   padding-top: 10px;
 }

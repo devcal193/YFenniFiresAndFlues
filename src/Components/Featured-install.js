@@ -11,10 +11,12 @@ export const FeaturedInstall = ({ page }) => {
                   <div key={fire.item_id}>
                      <h3>{fire.make_model}</h3>
                      <p>{fire.description}</p>
+
                      <img
                         src={fire.HeaderImageURL}
                         alt=''
                         width={window.innerWidth}
+                        className='Photo'
                      ></img>
                   </div>
                );
