@@ -5,29 +5,24 @@ import instaLogo from "../Images/Insta-logo.png";
 export const Footer = () => {
    return (
       // need to change to footer css
-      <div className='Header'>
-         <h2>Y-Fenni Fires and Flues</h2>
-         <div className='NavLinks'>
-            <Link id='Home-link' to={"/"}>
-               Home
-            </Link>
-            <span> | </span>
-            <Link id='Gallery-link' to={"/gallery"}>
-               Gallery
-            </Link>
-            <span> | </span>
-            <Link id='Services-link' to={"/services"}>
-               Our Services
-            </Link>
-            <span> | </span>
-            <Link id='About-link' to={"/about"}>
-               About
-            </Link>
-            <span> | </span>
-            <Link id='Contact-link' to={"/contact"}>
-               Contact Us
-            </Link>
-            <a
+      <div className='Footer'>
+         <h2>Y Fenni Fires and Flues</h2>
+         <Link id='Home-link' to={"/"}>
+            Home
+         </Link>
+         <Link id='Gallery-link' to={"/gallery"}>
+            Gallery
+         </Link>
+         <Link id='Services-link' to={"/services"}>
+            Our Services
+         </Link>
+         <Link id='About-link' to={"/about"}>
+            About
+         </Link>
+         <Link id='Contact-link' to={"/contact"}>
+            Contact Us
+         </Link>
+         {/* <a
                target={"_blank"}
                href={"https://www.facebook.com/yfennifiresandflues/"}
                rel='noreferrer'
@@ -49,8 +44,7 @@ export const Footer = () => {
                   alt='Insta logo'
                   style={{ width: "30px" }}
                ></img>
-            </a>
-         </div>
+            </a> */}
       </div>
    );
 };

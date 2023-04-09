@@ -3,17 +3,20 @@
    --Jet: #403d39;
    --Jet-Button: #403d3981;
    --Alabaster: #f4f3ee;
-   --Light-grey: #ccc5b9;
-   /* --Highlight: #56666B; */
-   --Highlight: #0f4c5c;
+   --Timberwolf: #ccc5b9;
+   --Floral-White: #fffcf2;
+   --Highlight: #002429;
+   --Dark-highlight: #001214;
+   --Sharp-highlight: #fdf008;
+   --Soft-highlight: #ddd50f;
    --Font-normal: "Playfair Display", serif;
+   --Nice-font: "Cormorant Garamond", serif;
 }
 
 * {
    margin: 0;
    padding: 0;
-   font-family: var(--Font-normal);
-   letter-spacing: 1px;
+   font-family: var(--Nice-font);
    font-weight: 400;
 }
 
@@ -21,6 +24,14 @@ body,
 html {
    background-color: var(--Alabaster);
    min-width: 100%;
+   width: 100%;
+}
+
+.App {
+   text-align: center;
+   background-color: var(--Highlight);
+   width: 100%;
+   margin: 0 auto;
 }
 
 li {
@@ -34,20 +45,21 @@ ul {
 
 a {
    appearance: none;
-   background-color: var(--Jet-Button);
+   background-color: var(--Jet);
    border-width: 0;
    box-sizing: border-box;
    color: var(--Alabaster);
    cursor: pointer;
    display: inline-block;
-   font-family: var(--Font-normal);
+   font-family: var(--Nice-font);
    font-size: 20px;
+   font-weight: 400;
    letter-spacing: 1px;
    line-height: 1em;
    margin: 0;
    opacity: 1;
    outline: 0;
-   padding: 20px 30px;
+   padding: 20px 10px;
    position: relative;
    text-align: center;
    text-decoration: none;
@@ -66,7 +78,7 @@ a {
 a:before {
    animation: opacityFallbackOut 0.5s step-end forwards;
    backface-visibility: hidden;
-   background-color: var(--Jet);
+   background-color: var(--Highlight);
    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
    display: flex;
    align-items: center;
@@ -87,56 +99,84 @@ a:hover:before {
 }
 
 a:after {
-   background-color: var(--Jet-Button);
+   background-color: var(--Highlight);
 }
 
 a:hover {
    background-color: rgb(126, 126, 126, 0.693);
 }
 
-.App {
-   text-align: center;
-   background-color: var(--Alabaster);
-   width: inherit;
-}
-
-.Header {
+.HeaderContainer {
    background-color: var(--Highlight);
-   padding-bottom: 10px;
-   border-bottom: 4px solid var(--Eerie-Black);
+   height: 95px;
 }
 
-.Header h1 {
-   color: white;
-   margin: 0;
-   margin-bottom: 5px;
+.HeaderTop {
+   background-color: var(--Floral-White);
+   height: 90px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.HeaderTop h1 {
+   color: var(--Highlight);
+   width: fit-content;
+   justify-self: center;
+   font-weight: bold;
+   font-size: 30px;
+   text-transform: uppercase;
+}
+
+.HeaderBottom {
+   background-color: var(--Floral-White);
+   position: absolute;
+   height: 40px;
+   width: 100vw;
+   margin-top: 5px;
+   z-index: 100;
+}
+
+.HeaderBottom svg {
+   stroke: var(--Highlight);
+   width: 40px;
+}
+
+.Footer {
+   background-color: var(--Highlight);
+   color: var(--Alabaster);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
 }
 
 .Tagline {
    background-image: url("https://scontent.fbrs4-1.fna.fbcdn.net/v/t39.30808-6/337558507_940644260304778_4918124472323672833_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=NOkF9IYYfcYAX9JOGiL&_nc_ht=scontent.fbrs4-1.fna&oh=00_AfAGfXrpHEmCvEiiazQWWzaFD4XdOHliUEq0kV3mYcuRFA&oe=6431E60D");
-   background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   background-color: black;
-   height: 500px;
-   clip-path: inset(0 0 80px 0);
+   height: 400px;
+   width: 100%;
+   margin-top: 40px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   box-shadow: inset 0px 5px 5px 0 rgba(71, 71, 71, 0.541);
 }
 .OverlayBanner {
-   background-color: rgba(126, 126, 126, 0.693);
+   background-color: rgba(126, 126, 126, 0.4);
    color: white;
    padding: 20px 0px;
-   transform: translateY(-50px);
    border-top: 10px rgba(255, 241, 219, 0.056);
    border-bottom: 10px rgba(255, 241, 219, 0.056);
+   box-shadow: inset 0px 0px 10px 1px rgb(255, 241, 219, 0.056);
    border-left: 0;
    border-right: 0;
-
    border-style: solid;
    width: 100%;
+   backdrop-filter: blur(1px);
 }
 
 .OverlayBanner h1 {
@@ -144,8 +184,8 @@ a:hover {
    padding-bottom: 20px;
 }
 
-.OverlayBanner p {
-   margin-bottom: 30px;
+.OverlayBanner h3 {
+   margin-bottom: 20px;
    padding: 0 30px;
 }
 
@@ -153,17 +193,35 @@ a:hover {
    content: "our services";
 }
 
+.HomeContainer {
+   background-color: var(--Alabaster);
+   padding: 5vw;
+}
+
+.Intro {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 40px;
+}
+
+.Intro p {
+   padding: 0 20px;
+}
+
 .Hetas {
-   padding: 10px 10px;
-   margin-top: -50px;
+   padding: 10px;
+   margin: 20px auto;
+   border: 2px solid var(--Highlight);
 }
 
 .FeaturedHome {
    background-image: url("./Images/annie-spratt-L6GydBHMVGQ-unsplash.jpg");
    background-size: cover;
    background-repeat: no-repeat;
-   border-top: 10px solid var(--Jet);
-   border-bottom: 10px solid var(--Jet);
+   border-top: 20px solid var(--Jet);
+   border-bottom: 20px solid var(--Jet);
    background-color: var(--Jet);
    color: white;
    height: 580px;
@@ -171,6 +229,12 @@ a:hover {
    flex-direction: column;
    align-items: center;
    justify-content: space-evenly;
+   margin: 40px 0;
+}
+
+.FeaturedHomeLink {
+   background-color: var(--Jet);
+   box-shadow: 0px 0px 10px 0.1px rgba(155, 155, 155, 0.637);
 }
 
 .FeaturedHomeLink:before {
@@ -178,22 +242,22 @@ a:hover {
 }
 
 .FeaturedHome img {
-   width: 90vw;
+   width: 92vw;
    height: 300px;
    object-fit: cover;
    object-position: 0 50%;
-   border: solid 2px rgba(75, 71, 67, 0.692);
-   border-style: outset;
-   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.747);
-}
-
-.FeaturedHome h2 {
-}
-
-.FeaturedHome h3 {
+   box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.747);
 }
 
 .FeaturedHome p {
    padding-bottom: 20px;
    padding-top: 10px;
+}
+
+.TestimonialHome {
+   margin: 20px 0;
+}
+
+.TestimonialHome p {
+   padding-bottom: 20px;
 }

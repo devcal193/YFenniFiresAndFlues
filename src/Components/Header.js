@@ -4,44 +4,49 @@ import instaLogo from "../Images/Insta-logo.png";
 
 export const Header = () => {
    return (
-      <div className='Header'>
-         <svg
-            clipRule='evenodd'
-            fillRule='evenodd'
-            width='24'
-            strokeLinejoin='round'
-            strokeMiterlimit='2'
-            viewBox='0 0 24 24'
-            xmlns='http://www.w3.org/2000/svg'
-         >
-            <path
-               d='m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z'
-               fillRule='nonzero'
-            />
-         </svg>
-         <a
+      <div className='HeaderContainer'>
+         <div className='HeaderTop'>
+            <h1>Y Fenni Fires & Flues</h1>
+            {/* <a
             target={"_blank"}
             href={"https://www.facebook.com/yfennifiresandflues/"}
             rel='noreferrer'
-         >
+            >
             <img
-               src={facebookLogo}
-               alt='Facebook logo'
-               style={{ width: "30px" }}
+            src={facebookLogo}
+            alt='Facebook logo'
+            style={{ width: "30px" }}
             ></img>
-         </a>
-         <span> </span>
-         <a
+            </a>
+            <span> </span>
+            <a
             target={"_blank"}
             href={"https://www.instagram.com/y_fenni_fires_and_flues/"}
             rel='noreferrer'
-         >
+            >
             <img
-               src={instaLogo}
-               alt='Insta logo'
-               style={{ width: "30px" }}
+            src={instaLogo}
+            alt='Insta logo'
+            style={{ width: "30px" }}
             ></img>
-         </a>
+         </a> */}
+         </div>
+         <div className='HeaderBottom'>
+            <svg
+               fill='none'
+               stroke='currentColor'
+               strokeWidth={1}
+               viewBox='0 0 24 24'
+               xmlns='http://www.w3.org/2000/svg'
+               aria-hidden='true'
+            >
+               <path
+                  strokeLinecap='square'
+                  strokeLinejoin='sqaure'
+                  d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'
+               />
+            </svg>
+         </div>
       </div>
    );
 };
