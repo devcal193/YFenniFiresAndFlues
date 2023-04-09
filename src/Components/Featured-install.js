@@ -28,7 +28,30 @@ export const FeaturedInstall = ({ page }) => {
       </div>
    ) : (
       <div className='FeaturedGallery'>
-         <Link to={"/gallery/:item_id"}>View Details</Link>
+         <h2>Featured Fit</h2>
+         {fireCollection.map((fire) => {
+            if (fire.featured === true) {
+               return (
+                  <div key={fire.item_id}>
+                     <h3>{fire.make_model}</h3>
+                     <p>{fire.description}</p>
+
+                     <img
+                        src={fire.HeaderImageURL}
+                        alt=''
+                        width={window.innerWidth}
+                        className='Photo'
+                     ></img>
+                     <Link
+                        className='FeaturedGalleryLink'
+                        to={`/gallery/${fire.item_id}`}
+                     >
+                        View Details
+                     </Link>
+                  </div>
+               );
+            }
+         })}
       </div>
    );
 };

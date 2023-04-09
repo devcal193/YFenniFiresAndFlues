@@ -6,7 +6,9 @@ export const Header = () => {
    return (
       <div className='HeaderContainer'>
          <div className='HeaderTop'>
-            <h1>Y Fenni Fires & Flues</h1>
+            <Link className='Title' to={"/"}>
+               <h1>Y Fenni Fires & Flues</h1>
+            </Link>
             {/* <a
             target={"_blank"}
             href={"https://www.facebook.com/yfennifiresandflues/"}

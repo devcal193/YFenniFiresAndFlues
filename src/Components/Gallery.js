@@ -18,8 +18,10 @@ export const Gallery = () => {
                            alt=''
                            width={window.innerWidth}
                         ></img>
-                        <br />
-                        <Link to={`/gallery/:${fire.item_id}`}>
+                        <Link
+                           className='GalleryLink'
+                           to={`/gallery/${fire.item_id}`}
+                        >
                            View Details
                         </Link>
                      </li>

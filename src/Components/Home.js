@@ -29,6 +29,9 @@ export const Home = () => {
                   minim veniam, quis nostrud exercitation ullamco laboris nisi
                   ut aliquip ex ea commodo consequat.
                </p>
+               <Link className='IntroAboutLink' to={"/about"}>
+                  About
+               </Link>
             </div>
 
             <div className='Hetas'>
@@ -48,22 +51,22 @@ export const Home = () => {
             <div className='TestimonialHome'>
                <div>
                   <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                      sed do eiusmod tempor incididunt ut labore et dolore magna
                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                     ullamco laboris nisi ut aliquip ex ea commodo consequat."
                   </p>
                   <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                      sed do eiusmod tempor incididunt ut labore et dolore magna
                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                     ullamco laboris nisi ut aliquip ex ea commodo consequat."
                   </p>
                   <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                      sed do eiusmod tempor incididunt ut labore et dolore magna
                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                     ullamco laboris nisi ut aliquip ex ea commodo consequat."
                   </p>
                </div>
             </div>

@@ -5,7 +5,7 @@ export const fireCollection = [
          "https://scontent.fbrs4-1.fna.fbcdn.net/v/t39.30808-6/337558507_940644260304778_4918124472323672833_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=NOkF9IYYfcYAX9JOGiL&_nc_ht=scontent.fbrs4-1.fna&oh=00_AfAGfXrpHEmCvEiiazQWWzaFD4XdOHliUEq0kV3mYcuRFA&oe=6431E60D",
       imageCollectionURLs: [
          {
-            URL: "https://scontent.fbrs4-1.fna.fbcdn.net/v/t39.30808-6/337558507_940644260304778_4918124472323672833_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=NOkF9IYYfcYAX9JOGiL&_nc_ht=scontent.fbrs4-1.fna&oh=00_AfAGfXrpHEmCvEiiazQWWzaFD4XdOHliUEq0kV3mYcuRFA&oe=6431E60D0",
+            URL: "https://scontent.fbrs4-1.fna.fbcdn.net/v/t39.30808-6/337558507_940644260304778_4918124472323672833_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=NOkF9IYYfcYAX9JOGiL&_nc_ht=scontent.fbrs4-1.fna&oh=00_AfAGfXrpHEmCvEiiazQWWzaFD4XdOHliUEq0kV3mYcuRFA&oe=6431E60D",
             description:
                "Lorem ipsum dolor sit amet consectetur adipiscing, elit vitae euismod semper dignissim, curabitur augue lacus congue posuere.",
          },
@@ -38,19 +38,20 @@ export const fireCollection = [
                "Lorem ipsum dolor sit amet consectetur adipiscing, elit vitae euismod semper dignissim, curabitur augue lacus congue posuere.",
          },
          {
-            URL: "https://scontent.fbrs4-2.fna.fbcdn.net/v/t39.30808-6/253474230_4922119651132113_5185950942276087967_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=y6J3KkWCkE4AX_8jsBj&_nc_ht=scontent.fbrs4-2.fna&oh=00_AfB5aHaaUaG7ZXdqRsE4olLY0Gs4U1P_d1rd4r_GBD7OfA&oe=643202BB",
+            URL: "https://www.facebook.com/photo/?fbid=4922089687801776&set=pcb.4922118761132202",
+            // URL: "https://scontent.fbrs4-2.fna.fbcdn.net/v/t39.30808-6/253474230_4922119651132113_5185950942276087967_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=6dqgMqXothQAX840LRq&_nc_ht=scontent.fbrs4-2.fna&oh=00_AfD08QejlHfWPSknyFQoT2DoJegyezLD-FfSbpOyO9DETg&oe=6437F17B",
 
             description:
                "Lorem ipsum dolor sit amet consectetur adipiscing, elit vitae euismod semper dignissim, curabitur augue lacus congue posuere.",
          },
          {
-            URL: "https://scontent.fbrs4-2.fna.fbcdn.net/v/t39.30808-6/253474230_4922119651132113_5185950942276087967_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=y6J3KkWCkE4AX_8jsBj&_nc_ht=scontent.fbrs4-2.fna&oh=00_AfB5aHaaUaG7ZXdqRsE4olLY0Gs4U1P_d1rd4r_GBD7OfA&oe=643202BB",
+            URL: "https://scontent.fbrs4-2.fna.fbcdn.net/v/t39.30808-6/254638805_4922121794465232_2697911305038019533_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=r34TvanX7f0AX8V6P_o&_nc_ht=scontent.fbrs4-2.fna&oh=00_AfBHbtKelu4xHNduuYog6rrhQSu1tgbbwqulIk2oTg0zMQ&oe=643721BF",
 
             description:
                "Lorem ipsum dolor sit amet consectetur adipiscing, elit vitae euismod semper dignissim, curabitur augue lacus congue posuere.",
          },
          {
-            URL: "https://scontent.fbrs4-1.fna.fbcdn.net/v/t39.30808-6/253795353_4922121811131897_7412949573991361644_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=jbMe7GCfQ1YAX8sPULO&_nc_ht=scontent.fbrs4-1.fna&oh=00_AfA61uGHwaRn-H-D2Fc6OIZgNR5C0MEWDCPEv3mO71zf_g&oe=6431993C",
+            URL: "https://scontent.fbrs4-1.fna.fbcdn.net/v/t39.30808-6/253795353_4922121811131897_7412949573991361644_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ovNBBVAN51sAX_ZbbMW&_nc_ht=scontent.fbrs4-1.fna&oh=00_AfBDwStkvSxIlgKS7bKsI_Lwb9VNaz9pLX9q_16HRFmAQw&oe=643787FC",
 
             description:
                "Lorem ipsum dolor sit amet consectetur adipiscing, elit vitae euismod semper dignissim, curabitur augue lacus congue posuere.",
@@ -135,7 +136,7 @@ export const fireCollection = [
 
       make_model: "Wiking Miro 2",
       description:
-         "Lorem ipsum dolor sit amet consectetur adipiscing, elit vitae euismod semper dignissim, curabitur augue lacus congue posuere.",
+         "Lorem ipsum dolor sit amet consectetur adipiscing, elit vitae euismod semper dignissim, curabitur augue lacus congue posuereLorem ipsum dolor sit amet consectetur adipiscing, elit vitae euismod semper dignissim, curabitur augue lacus congue posuere.",
       featured: true,
    },
 ];
