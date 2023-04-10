@@ -137,7 +137,6 @@ a:active {
    background: none;
 }
 
-
 .HeaderTop {
    background-color: var(--Alabaster);
    height: 90px;
@@ -338,10 +337,15 @@ a:active {
    font-size: 25px;
 }
 
+.Gallery img {
+   border: 2px solid var(--Highlight);
+}
+
 .GalleryLink {
+   background-color: var(--Highlight);
    width: 100%;
    margin: 0 auto;
-   margin-top: -3px;
+   margin-top: -5px;
 }
 
 .GalleryLink:before {
@@ -399,16 +403,11 @@ a:active {
    padding: 20px 0;
 }
 
-.Fire h2{
- margin: 10px 0;
- font-size: 30px;
+.Fire h2 {
+   margin: 10px 0;
+   font-size: 30px;
 }
 
 .Fire p {
    padding: 40px 20px;
-}
-
-.fb-post{
-   margin-top: 40px;
-   height: 500px;
 }
