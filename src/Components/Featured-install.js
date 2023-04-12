@@ -4,7 +4,7 @@ import { fireCollection } from "../FireIndex";
 export const FeaturedInstall = ({ page }) => {
    return page == "home" ? (
       <div className='FeaturedHome'>
-         <h2>Featured Fit</h2>
+         <h2>Featured Install</h2>
          {fireCollection.map((fire) => {
             if (fire.featured === true) {
                return (
@@ -28,7 +28,7 @@ export const FeaturedInstall = ({ page }) => {
       </div>
    ) : (
       <div className='FeaturedGallery'>
-         <h2>Featured Fit</h2>
+         <h2>Featured Install</h2>
          {fireCollection.map((fire) => {
             if (fire.featured === true) {
                return (

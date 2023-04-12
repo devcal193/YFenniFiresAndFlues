@@ -59,7 +59,7 @@ img {
 
 a {
    appearance: none;
-   background-color: var(--Jet);
+   background-color: var(--Highlight);
    border-width: 0;
    box-sizing: border-box;
    color: var(--Alabaster);
@@ -88,6 +88,7 @@ a {
    touch-action: manipulation;
    vertical-align: baseline;
    white-space: nowrap;
+   width: 100%;
 }
 
 a:before {
@@ -106,6 +107,7 @@ a:before {
    transform: translateZ(0);
    transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
       -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+   width: calc(100% - 40px);
 }
 
 a:hover:before {
@@ -126,7 +128,6 @@ a:active {
 
 .HeaderContainer {
    background-color: var(--Highlight);
-   height: 95px;
 }
 
 .Title {
@@ -156,16 +157,42 @@ a:active {
 
 .HeaderBottom {
    background-color: var(--Alabaster);
-   position: absolute;
    height: 40px;
    width: 100%;
    margin-top: 5px;
-   z-index: 100;
 }
 
 .HeaderBottom svg {
    stroke: var(--Highlight);
    width: 40px;
+}
+
+.Dropdown {
+   box-shadow: inset 0px 0px 10px -1px rgba(0, 0, 0, 0.63);
+   background-color: var(--Highlight);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.Dropdown a {
+   background: none;
+}
+
+.DropdownExternalLinks svg {
+   fill: var(--Alabaster);
+   width: 40px;
+}
+
+.DropdownExternalLinks {
+   margin: 10px 0;
+   display: flex;
+   flex-direction: row;
+   gap: 25px;
+}
+
+.DropdownExternalLinks a {
+   padding: 10px;
 }
 
 .Footer {
@@ -185,6 +212,7 @@ a:active {
 }
 
 .Footer a {
+   width: fit-content;
    background: none;
    padding: 10px 0;
    align-self: start;
@@ -194,12 +222,12 @@ a:active {
 /* HOME PAGE */
 
 .Tagline {
-   background-image: url("https://scontent.fbrs4-1.fna.fbcdn.net/v/t39.30808-6/337558507_940644260304778_4918124472323672833_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=NOkF9IYYfcYAX9JOGiL&_nc_ht=scontent.fbrs4-1.fna&oh=00_AfAGfXrpHEmCvEiiazQWWzaFD4XdOHliUEq0kV3mYcuRFA&oe=6431E60D");
+   background-image: url("https://live.staticflickr.com/65535/52806408247_8abb1ad1c8_k.jpg");
    background-size: cover;
    background-position: center;
    height: 400px;
    width: 100%;
-   margin-top: 40px;
+   /* margin-top: 40px; */
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -217,7 +245,6 @@ a:active {
    border-right: 0;
    border-style: solid;
    width: 100%;
-   backdrop-filter: blur(0px);
 }
 
 .OverlayBanner h1 {
@@ -226,9 +253,10 @@ a:active {
 }
 
 .OverlayBanner h3 {
+   font-size: 22px;
    margin-bottom: 20px;
    padding: 0 30px;
-   text-shadow: 1px 1px 1px var(--Jet);
+   text-shadow: 1px 1px 2px var(--Jet);
 }
 
 .OverlayBannerLink {
@@ -277,38 +305,52 @@ a:active {
    background-image: url("./Images/annie-spratt-L6GydBHMVGQ-unsplash.jpg");
    background-size: cover;
    background-repeat: no-repeat;
-   border-top: 20px solid var(--Jet);
-   border-bottom: 20px solid var(--Jet);
-   background-color: var(--Jet);
+   background-position: center;
+   border-top: 20px solid var(--Highlight);
+   border-bottom: 20px solid var(--Highlight);
+   border-right: 2px solid var(--Highlight);
+   border-left: 2px solid var(--Highlight);
    color: white;
-   height: 580px;
+   height: fit-content;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: space-evenly;
    margin: 40px 0;
+   text-shadow: 1px 1px 2px var(--Jet);
 }
 
 .FeaturedHomeLink {
-   background-color: var(--Jet);
-   box-shadow: 0px 0px 10px 0.1px rgba(155, 155, 155, 0.637);
+   box-shadow: 0px 0px 10px 0.1px rgba(155, 155, 155, 0.459);
+   width: 140px;
+   margin-bottom: 20px;
 }
 
 .FeaturedHomeLink:before {
    content: "view gallery";
+   width: 120px;
 }
 
 .FeaturedHome img {
    width: 92%;
-   height: 300px;
+   height: 80vw;
    object-fit: cover;
    object-position: 0 50%;
-   box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.747);
+   box-shadow: -10px 5px 5px 5px rgba(0, 0, 0, 0.322);
+   margin-bottom: 20px;
 }
 
 .FeaturedHome p {
-   padding-bottom: 20px;
-   padding-top: 10px;
+   padding: 20px 10px;
+}
+
+.FeaturedHome h2 {
+   padding: 20px 10px;
+   text-transform: uppercase;
+}
+
+.FeaturedHome h3 {
+   font-size: 23px;
 }
 
 .TestimonialHome {
@@ -319,10 +361,23 @@ a:active {
    padding-bottom: 20px;
 }
 
+.CtaHome {
+}
+.CtaHome p {
+   margin-bottom: 30px;
+}
+.CtaHomeLink {
+   background-color: var(--Highlight);
+}
+.CtaHomeLink:before {
+   background-color: var(--Highlight);
+   content: "Contact us";
+   width: calc(100% - 20px);
+}
+
 /* GALLERY */
 
 .Gallery {
-   margin-top: 40px;
    padding: 40px 5px;
    padding-bottom: 10px;
    background-color: var(--Alabaster);
@@ -339,6 +394,7 @@ a:active {
 
 .Gallery img {
    border: 2px solid var(--Highlight);
+   margin-top: 5px;
 }
 
 .GalleryLink {
@@ -399,7 +455,6 @@ a:active {
 
 .Fire {
    background-color: var(--Alabaster);
-   margin-top: 40px;
    padding: 20px 0;
 }
 

@@ -30,7 +30,7 @@ export const Home = () => {
                   ut aliquip ex ea commodo consequat.
                </p>
                <Link className='IntroAboutLink' to={"/about"}>
-                  About
+                  About Us
                </Link>
             </div>
 
@@ -70,15 +70,15 @@ export const Home = () => {
                   </p>
                </div>
             </div>
-            {/* <div className='Cta-home'>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <Link id='Contact-link-home' to={"/contact"}>
-            Contact Us
+            <div className='CtaHome'>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               </p>
+            </div>
+            <Link className='CtaHomeLink' to={"/contact"}>
+               Contact Us
             </Link>
-         </div> */}
          </div>
       </div>
    );
