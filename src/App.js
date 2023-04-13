@@ -9,11 +9,13 @@ import { Contact } from "./Components/Contact";
 import { Header } from "./Components/Header";
 import { Footer } from "./Components/Footer";
 import { Testimonials } from "./Components/Testimonials";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
    return (
       <BrowserRouter>
          <div className='App'>
+            <ScrollToTop />
             <Header />
             <Routes>
                <Route path='/' element={<Home />} />
