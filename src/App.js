@@ -8,6 +8,7 @@ import { About } from "./Components/About";
 import { Contact } from "./Components/Contact";
 import { Header } from "./Components/Header";
 import { Footer } from "./Components/Footer";
+import { Testimonials } from "./Components/Testimonials";
 
 function App() {
    return (
@@ -21,6 +22,7 @@ function App() {
                <Route path='/services' element={<Services />} />
                <Route path='/about' element={<About />} />
                <Route path='/contact' element={<Contact />} />
+               <Route path='/testimonials' element={<Testimonials />} />
             </Routes>
             <Footer />
          </div>

@@ -1,23 +1,17 @@
 export const Contact = () => {
    return (
       <div className='Contact'>
-         <h2>Contact Us</h2>
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+         </p>
+
          <h3>Contact Details</h3>
-         <h4>Phone Number</h4>
-         <p>0000000000</p>
-         <h4>Email</h4>
+
+         <p>07961590276</p>
          <p>kevinbeever@yfennifires&flues.com</p>
-         <h3>Send us an email</h3>
-         <form>
-            <label htmlFor='name_input'>Name: </label>
-            <input id='name_input' />
-            <br />
-            <label htmlFor='email_input'>Email: </label>
-            <input id='email_input' />
-            <br />
-            <label htmlFor='message_input'>Message: </label>
-            <input id='message_input' />
-         </form>
       </div>
    );
 };

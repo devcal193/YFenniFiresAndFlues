@@ -177,6 +177,7 @@ a:active {
 
 .Dropdown a {
    background: none;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.116);
 }
 
 .DropdownExternalLinks svg {
@@ -193,6 +194,7 @@ a:active {
 
 .DropdownExternalLinks a {
    padding: 10px;
+   border-bottom: 0;
 }
 
 .Footer {
@@ -217,6 +219,19 @@ a:active {
    padding: 10px 0;
    align-self: start;
    margin-left: 20px;
+}
+
+.FooterExternalLinks svg {
+   fill: var(--Alabaster);
+   width: 25px;
+}
+
+.FooterExternalLinks {
+   margin: 10px 0;
+   display: flex;
+   flex-direction: row;
+   margin: 0 auto 0 0;
+   gap: 10px;
 }
 
 /* HOME PAGE */
@@ -353,16 +368,28 @@ a:active {
    font-size: 23px;
 }
 
-.TestimonialHome {
-   margin: 20px 0;
+.TestimonialHome p {
+   padding: 10px;
 }
 
-.TestimonialHome p {
-   padding-bottom: 20px;
+.Testimonial {
+   margin-bottom: 10px;
+}
+
+.Testimonial h3 {
+   font-family: "Sacramento", cursive;
+}
+
+.Testimonial svg {
+   width: 25px;
+   stroke-width: 0.5px;
+   stroke: var(--Highlight);
 }
 
 .CtaHome {
+   margin-top: 40px;
 }
+
 .CtaHome p {
    margin-bottom: 30px;
 }
@@ -465,4 +492,54 @@ a:active {
 
 .Fire p {
    padding: 40px 20px;
+}
+
+/* Services Page */
+
+.Services {
+   background-color: var(--Alabaster);
+   padding: 20px;
+}
+
+.Service {
+   margin-bottom: 20px;
+}
+
+/* About Page */
+
+.About {
+   background-color: var(--Alabaster);
+   padding: 20px;
+}
+
+.About h2 {
+}
+
+.About p {
+   margin: 40px 0;
+}
+
+/* Contact Page */
+
+.Contact {
+   background-color: var(--Alabaster);
+   height: 50vh;
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+}
+
+.Contact h3 {
+   margin: 20px 0;
+}
+
+/* Testimonials Page */
+
+.TestimonialsPage {
+   background-color: var(--Alabaster);
+   padding: 20px;
+}
+
+.TestimonialsPage h2 {
+   margin: 20px 0;
 }
