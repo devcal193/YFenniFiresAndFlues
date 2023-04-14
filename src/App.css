@@ -2,8 +2,7 @@
    --Eerie-Black: #252422;
    --Jet: #403d39;
    --Jet-Button: #403d3981;
-   --Alabaster: #f4f3ee;
-   --Timberwolf: #ccc5b9;
+   --Alabaster: #eceae9;
    --Floral-White: #fffcf2;
    --Highlight: #002429;
    --Dark-highlight: #001214;
@@ -27,7 +26,6 @@
 
 body,
 html {
-   /* background-color: var(--Highlight); */
    overflow-x: hidden;
 }
 
@@ -41,6 +39,10 @@ body {
    background-color: var(--Alabaster);
    width: 100%;
    margin: 0 auto;
+}
+
+p {
+   font-size: 20px;
 }
 
 li {
@@ -70,11 +72,10 @@ a {
    display: flex;
    flex-direction: column;
    font-family: var(--Unna);
-   font-size: 15px;
    font-weight: 400;
    letter-spacing: 1px;
    line-height: 1em;
-   margin: 0;
+   margin: 0 auto;
    opacity: 1;
    outline: 0;
    padding: 15px 10px;
@@ -91,7 +92,8 @@ a {
    touch-action: manipulation;
    vertical-align: baseline;
    white-space: nowrap;
-   width: 100%;
+   width: fit-content;
+   font-size: 20px;
 }
 
 a:before {
@@ -110,7 +112,8 @@ a:before {
    transform: translateZ(0);
    transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
       -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-   width: calc(100% - 40px);
+   width: fit-content;
+   font-size: 20px;
 }
 
 a:hover:before {
@@ -182,6 +185,7 @@ a:active {
 .Dropdown a {
    background: none;
    border-bottom: 1px solid rgba(255, 255, 255, 0.116);
+   width: 100%;
 }
 
 .DropdownExternalLinks svg {
@@ -210,7 +214,6 @@ a:active {
    justify-content: center;
    padding: 10px 0;
    border-top: solid 3px var(--Alabaster);
-   margin-top: 30px;
 }
 
 .Footer h2 {
@@ -242,53 +245,64 @@ a:active {
 
 .Tagline {
    background-image: url("https://live.staticflickr.com/65535/52806408247_8abb1ad1c8_k.jpg");
+   background-image: url("https://chesneys.co.uk/wp-content/uploads/2019/03/Devonshire-Beaumont-012-e1552299216625.jpg");
    background-size: cover;
    background-position: center;
    height: 400px;
    width: 100%;
-   /* margin-top: 40px; */
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    box-shadow: inset 0px 5px 5px 0 rgba(71, 71, 71, 0.541);
-}
-.OverlayBanner {
-   background-color: rgba(126, 126, 126, 0.719);
-   color: white;
-   padding: 20px 0px;
-   border-top: 10px rgba(255, 241, 219, 0.056);
-   border-bottom: 10px rgba(255, 241, 219, 0.056);
-   box-shadow: inset 0px 0px 10px 1px rgb(255, 241, 219, 0.056);
-   border-left: 0;
-   border-right: 0;
-   border-style: solid;
-   width: 100%;
+   margin-bottom: 150px;
 }
 
-.OverlayBanner h1 {
-   margin: 0;
-   padding-bottom: 20px;
+.OverlayBanner {
+   background-color: var(--Alabaster);
+   color: var(--Highlight);
+   padding: 10px;
+   padding-bottom: 30px;
+   border: none;
+   margin-top: 625px;
+   box-shadow: none;
+   border-style: none;
+   height: fit-content;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
 }
 
 .OverlayBanner h3 {
-   font-size: 22px;
-   margin-bottom: 20px;
-   padding: 0 30px;
-   text-shadow: 1px 1px 2px var(--Jet);
+   font-size: 25px;
+   margin: 0;
+   padding: 20px 10vw;
 }
 
 .OverlayBannerLink {
-   width: 140px;
+   font-weight: 700;
+   border: 3px double var(--Highlight);
+   color: var(--Highlight);
+   background-color: var(--Alabaster);
+   width: fit-content;
+   font-size: 20px;
    margin: 0 auto;
 }
 .OverlayBannerLink:before {
+   color: var(--Alabaster);
    content: "our services";
-   width: 120px;
+   width: fit-content;
+}
+
+.Home {
+   background-color: var(--Alabaster);
 }
 
 .HomeContainer {
-   background-color: var(--Alabaster);
+   margin-top: 230px;
+   background-color: white;
    padding: 5%;
 }
 
@@ -310,7 +324,7 @@ a:active {
 }
 
 .IntroAboutLink:before {
-   content: "about";
+   content: "about us";
    padding: 15px 20px;
 }
 
@@ -341,13 +355,11 @@ a:active {
 
 .FeaturedHomeLink {
    box-shadow: 0px 0px 10px 0.1px rgba(155, 155, 155, 0.459);
-   width: 140px;
    margin-bottom: 20px;
 }
 
 .FeaturedHomeLink:before {
    content: "view gallery";
-   width: 120px;
 }
 
 .FeaturedHome img {

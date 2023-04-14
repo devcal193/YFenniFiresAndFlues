@@ -2,8 +2,8 @@
    --Eerie-Black: #252422;
    --Jet: #403d39;
    --Jet-Button: #403d3981;
-   --Alabaster: #f4f3ee;
-   --Timberwolf: #ccc5b9;
+   --Alabaster: #eceae9;
+   --Alabaster: #f6f5f4;
    --Floral-White: #fffcf2;
    --Highlight: #002429;
    --Dark-highlight: #001214;
@@ -26,7 +26,7 @@
       width: 100%;
       height: 120px;
    }
-   
+
    .HeaderTop {
       box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.082);
       display: flex;
@@ -75,15 +75,22 @@
 }
 
 @media screen and (min-width: 1200px) {
+   p {
+      font-size: 23px;
+   }
+
+   .App {
+      background-color: white;
+   }
+
    .Container {
-      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.082);
       width: calc(100vw - 20%);
       margin: 0 auto;
    }
 
    .HeaderContainer {
       background-color: var(--Alabaster);
-      box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.082);
+      box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.164);
       margin-bottom: 40px;
       width: 100%;
       height: 120px;
@@ -92,10 +99,10 @@
    .HeaderTop {
       box-shadow: none;
       display: flex;
-      height: auto;
+      height: inherit;
       flex-direction: row;
       justify-content: flex-start;
-      align-items: center;
+      align-items: flex-end;
       background-color: var(--Alabaster);
    }
 
@@ -107,16 +114,17 @@
       text-transform: uppercase;
       width: fit-content;
       margin-left: 40px;
+      margin-bottom: 10px;
    }
 
    .DesktopHeaderLinks {
       display: flex;
       gap: 20px;
       margin-right: 20px;
+      margin-bottom: 10px;
    }
 
    .DesktopHeaderLinks a {
-      background-color: var(--Alabaster);
       color: var(--Highlight);
       font-size: 20px;
    }
@@ -124,6 +132,7 @@
    .HeaderExternalLinks {
       display: flex;
       margin-right: 10px;
+      margin-bottom: 10px;
    }
 
    .HeaderExternalLinks a {
@@ -133,13 +142,11 @@
 
    .Footer {
       background-color: var(--Highlight);
-      color: var(--Alabaster);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       padding: 10px 0;
-      border-top: solid 3px var(--Alabaster);
       margin-top: 0px;
    }
 
@@ -156,7 +163,6 @@
    }
 
    .FooterExternalLinks svg {
-      fill: var(--Alabaster);
       width: 25px;
    }
 
@@ -171,53 +177,75 @@
    /* HOME PAGE */
 
    .Tagline {
-      background-image: url("https://live.staticflickr.com/65535/52806408247_8abb1ad1c8_k.jpg");
+      background-image: url("https://chesneys.co.uk/wp-content/uploads/2019/03/Devonshire-Beaumont-012-e1552299216625.jpg");
       background-size: cover;
       background-position: center;
-      height: 400px;
+      background-repeat: no-repeat;
+      height: 800px;
       width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       box-shadow: none;
+      margin: 0;
    }
    .OverlayBanner {
-      background-color: rgba(126, 126, 126, 0.719);
+      background-color: var(--Alabaster);
       color: white;
-      padding: 20px 0px;
-      border-top: 10px rgba(255, 241, 219, 0.056);
-      border-bottom: 10px rgba(255, 241, 219, 0.056);
-      box-shadow: inset 0px 0px 10px 1px rgb(255, 241, 219, 0.056);
-      border-left: 0;
-      border-right: 0;
-      border-style: solid;
-      width: 100%;
-   }
-
-   .OverlayBanner h1 {
+      padding-bottom: 10px;
+      padding-right: 10px;
+      padding-top: 0;
+      padding-left: 0;
+      border: none;
       margin: 0;
-      padding-bottom: 20px;
+      box-shadow: none;
+      border-style: none;
+      height: 25%;
+      width: 500px;
+      position: absolute;
+      top: 200px;
+      left: 12%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.164);
    }
 
    .OverlayBanner h3 {
-      font-size: 22px;
-      margin-bottom: 20px;
-      padding: 0 30px;
-      text-shadow: 1px 1px 2px var(--Jet);
+      height: 200px;
+      width: 60%;
+      border-bottom: 3px double var(--Highlight);
+      border-right: 3px double var(--Highlight);
+      font-size: 30px;
+      margin: 0;
+      color: var(--Highlight);
+      padding: 0;
+      padding-top: 40px;
+      text-shadow: none;
    }
 
    .OverlayBannerLink {
-      width: 140px;
-      margin: 0 auto;
+      border: 2px solid var(--Highlight);
+      
+      margin-top: auto;
+      margin-bottom: 0;
+      margin-left: auto;
+      margin-right: 0px;
+      padding: 30px 20px;
+      font-size: 18px;
    }
    .OverlayBannerLink:before {
       content: "our services";
-      width: 120px;
+      font-size: 18px;
+      padding: 30px 20px;
    }
 
    .HomeContainer {
-      background-color: var(--Alabaster);
+      background-color: white;
+      margin-top: 0;
+      margin-bottom: 40px;
       padding: 5%;
    }
 
@@ -231,16 +259,23 @@
 
    .Intro p {
       padding: 0 20px;
+      padding-bottom: 50px;
    }
 
    .IntroAboutLink {
-      margin-top: 20px;
-      padding: 15px 20px;
+      width: 160px;
+      margin: 0 auto;
+      padding: 25px 0;
+      font-size: 18px;
    }
 
    .IntroAboutLink:before {
-      content: "about";
-      padding: 15px 20px;
+      content: "about us";
+      margin-top: 20px;
+      width: 160px;
+      margin: 0 auto;
+      padding: 25px 0;
+      font-size: 18px;
    }
 
    .Hetas {
@@ -270,13 +305,13 @@
 
    .FeaturedHomeLink {
       box-shadow: 0px 0px 10px 0.1px rgba(155, 155, 155, 0.459);
-      width: 140px;
       margin-bottom: 20px;
+      padding: 30px 20px;
    }
 
    .FeaturedHomeLink:before {
       content: "view gallery";
-      width: 120px;
+      padding: 30px 20px;
    }
 
    .FeaturedHome img {
@@ -328,11 +363,13 @@
    }
    .CtaHomeLink {
       background-color: var(--Highlight);
+      padding: 30px 20px;
    }
    .CtaHomeLink:before {
       background-color: var(--Highlight);
       content: "Contact us";
-      width: calc(100% - 20px);
+      padding: 30px 20px;
+      width: fit-content;
    }
 
    /* GALLERY */
