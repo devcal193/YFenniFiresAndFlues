@@ -14,6 +14,9 @@
    --Unna: "Unna", serif;
 }
 
+@media screen and (max-width: 749px) {
+}
+
 * {
    margin: 0;
    padding: 0;
@@ -29,13 +32,13 @@ html {
 }
 
 body {
-   background-color: rgb(217, 255, 2);
+   background-color: var(--Alabaster);
    margin: 0 auto;
 }
 
 .App {
    text-align: center;
-   background-color: var(--Highlight);
+   background-color: var(--Alabaster);
    width: 100%;
    margin: 0 auto;
 }
@@ -128,6 +131,7 @@ a:active {
 
 .HeaderContainer {
    background-color: var(--Highlight);
+   margin-bottom: 0;
 }
 
 .Title {

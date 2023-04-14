@@ -15,7 +15,6 @@ export const Header = () => {
                <h1>Y Fenni Fires & Flues</h1>
             </Link>
          </div>
-
          {isDropdown ? (
             <div className='Dropdown' onClick={handleDropDown}>
                <Link to={"/"}>Home</Link>
@@ -57,7 +56,6 @@ export const Header = () => {
          ) : (
             <></>
          )}
-
          <div className='HeaderBottom' onClick={handleDropDown}>
             <svg
                fill='none'
