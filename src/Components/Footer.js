@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import facebookLogo from "../Images/FB-logo.png";
-import instaLogo from "../Images/Insta-logo.png";
 
 export const Footer = () => {
    return (

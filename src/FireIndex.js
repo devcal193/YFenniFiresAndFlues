@@ -19,7 +19,7 @@ export const fireCollection = [
       make_model: "Ironwood Thaw",
       description:
          "Not posted for some time so let’s let’s get back to it. Here’s one we finished yesterday. Topstak own brand of stove, Ironwood Thaw👌",
-      featured: false,
+      featured: true,
    },
    {
       item_id: 666002,
@@ -143,6 +143,6 @@ export const fireCollection = [
       make_model: "Wiking Miro 2",
       description:
          "Lorem ipsum dolor sit amet consectetur adipiscing, elit vitae euismod semper dignissim, curabitur augue lacus congue posuereLorem ipsum dolor sit amet consectetur adipiscing, elit vitae euismod semper dignissim, curabitur augue lacus congue posuere.",
-      featured: true,
+      featured: false,
    },
 ];

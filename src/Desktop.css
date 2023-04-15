@@ -14,7 +14,12 @@
    --Unna: "Unna", serif;
 }
 
-@media screen and (min-width: 751px) and (max-width: 1999px) {
+@media screen and (min-width: 751px) and (max-width: 1199px) {
+
+   .App {
+      background-color: white;
+   }
+   
    .Container {
       width: calc(100vw - 10%);
       margin: 0 auto;
@@ -28,7 +33,7 @@
    }
 
    .HeaderTop {
-      box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.082);
+      box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.164);
       display: flex;
       height: auto;
       flex-direction: column;
@@ -69,9 +74,10 @@
       color: var(--Highlight);
    }
 
-   .Tagline {
-      box-shadow: none;
+   .HomeContainer {
+      margin-bottom: 60px;
    }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -84,7 +90,7 @@
    }
 
    .Container {
-      width: calc(100vw - 20%);
+      width: calc(100vw - 10%);
       margin: 0 auto;
    }
 
@@ -106,14 +112,13 @@
       background-color: var(--Alabaster);
    }
 
+   .Title {
+      margin: 0;
+      margin-left: 70px;
+   }
+
    .HeaderTop h1 {
-      color: var(--Highlight);
-      font-family: var(--Unna);
-      font-weight: 400;
-      font-size: 35px;
-      text-transform: uppercase;
       width: fit-content;
-      margin-left: 40px;
       margin-bottom: 10px;
    }
 
@@ -122,9 +127,11 @@
       gap: 20px;
       margin-right: 20px;
       margin-bottom: 10px;
+      margin-left: auto;
    }
 
    .DesktopHeaderLinks a {
+      background-color: var(--Alabaster);
       color: var(--Highlight);
       font-size: 20px;
    }
@@ -140,374 +147,5 @@
       color: var(--Highlight);
    }
 
-   .Footer {
-      background-color: var(--Highlight);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 0;
-      margin-top: 0px;
-   }
-
-   .Footer h2 {
-      text-transform: uppercase;
-   }
-
-   .Footer a {
-      width: fit-content;
-      background: none;
-      padding: 10px 0;
-      align-self: start;
-      margin-left: 20px;
-   }
-
-   .FooterExternalLinks svg {
-      width: 25px;
-   }
-
-   .FooterExternalLinks {
-      margin: 10px 0;
-      display: flex;
-      flex-direction: row;
-      margin: 0 auto 0 0;
-      gap: 10px;
-   }
-
-   /* HOME PAGE */
-
-   .Tagline {
-      background-image: url("https://chesneys.co.uk/wp-content/uploads/2019/03/Devonshire-Beaumont-012-e1552299216625.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 800px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      box-shadow: none;
-      margin: 0;
-   }
-   .OverlayBanner {
-      background-color: var(--Alabaster);
-      color: white;
-      padding-bottom: 10px;
-      padding-right: 10px;
-      padding-top: 0;
-      padding-left: 0;
-      border: none;
-      margin: 0;
-      box-shadow: none;
-      border-style: none;
-      height: 25%;
-      width: 500px;
-      position: absolute;
-      top: 200px;
-      left: 12%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.164);
-   }
-
-   .OverlayBanner h3 {
-      height: 200px;
-      width: 60%;
-      border-bottom: 3px double var(--Highlight);
-      border-right: 3px double var(--Highlight);
-      font-size: 30px;
-      margin: 0;
-      color: var(--Highlight);
-      padding: 0;
-      padding-top: 40px;
-      text-shadow: none;
-   }
-
-   .OverlayBannerLink {
-      border: 2px solid var(--Highlight);
-      
-      margin-top: auto;
-      margin-bottom: 0;
-      margin-left: auto;
-      margin-right: 0px;
-      padding: 30px 20px;
-      font-size: 18px;
-   }
-   .OverlayBannerLink:before {
-      content: "our services";
-      font-size: 18px;
-      padding: 30px 20px;
-   }
-
-   .HomeContainer {
-      background-color: white;
-      margin-top: 0;
-      margin-bottom: 40px;
-      padding: 5%;
-   }
-
-   .Intro {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 40px;
-   }
-
-   .Intro p {
-      padding: 0 20px;
-      padding-bottom: 50px;
-   }
-
-   .IntroAboutLink {
-      width: 160px;
-      margin: 0 auto;
-      padding: 25px 0;
-      font-size: 18px;
-   }
-
-   .IntroAboutLink:before {
-      content: "about us";
-      margin-top: 20px;
-      width: 160px;
-      margin: 0 auto;
-      padding: 25px 0;
-      font-size: 18px;
-   }
-
-   .Hetas {
-      padding: 10px;
-      margin: 20px auto;
-      border: 2px solid var(--Highlight);
-   }
-
-   .FeaturedHome {
-      background-image: url("./Images/annie-spratt-L6GydBHMVGQ-unsplash.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      border-top: 20px solid var(--Highlight);
-      border-bottom: 20px solid var(--Highlight);
-      border-right: 2px solid var(--Highlight);
-      border-left: 2px solid var(--Highlight);
-      color: white;
-      height: fit-content;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-      margin: 40px 0;
-      text-shadow: 1px 1px 2px var(--Jet);
-   }
-
-   .FeaturedHomeLink {
-      box-shadow: 0px 0px 10px 0.1px rgba(155, 155, 155, 0.459);
-      margin-bottom: 20px;
-      padding: 30px 20px;
-   }
-
-   .FeaturedHomeLink:before {
-      content: "view gallery";
-      padding: 30px 20px;
-   }
-
-   .FeaturedHome img {
-      width: 92%;
-      height: 80vw;
-      object-fit: cover;
-      object-position: 0 50%;
-      box-shadow: -10px 5px 5px 5px rgba(0, 0, 0, 0.322);
-      margin-bottom: 20px;
-   }
-
-   .FeaturedHome p {
-      padding: 20px 10px;
-   }
-
-   .FeaturedHome h2 {
-      padding: 20px 10px;
-      text-transform: uppercase;
-   }
-
-   .FeaturedHome h3 {
-      font-size: 23px;
-   }
-
-   .TestimonialHome p {
-      padding: 10px;
-   }
-
-   .Testimonial {
-      margin-bottom: 10px;
-   }
-
-   .Testimonial h3 {
-      font-family: "Sacramento", cursive;
-   }
-
-   .Testimonial svg {
-      width: 25px;
-      stroke-width: 0.5px;
-      stroke: var(--Highlight);
-   }
-
-   .CtaHome {
-      margin-top: 40px;
-   }
-
-   .CtaHome p {
-      margin-bottom: 30px;
-   }
-   .CtaHomeLink {
-      background-color: var(--Highlight);
-      padding: 30px 20px;
-   }
-   .CtaHomeLink:before {
-      background-color: var(--Highlight);
-      content: "Contact us";
-      padding: 30px 20px;
-      width: fit-content;
-   }
-
-   /* GALLERY */
-
-   .Gallery {
-      padding: 40px 5px;
-      padding-bottom: 10px;
-      background-color: var(--Alabaster);
-      box-shadow: inset 0px 0px 5px -1px var(--Jet);
-   }
-
-   .Gallery li {
-      margin: 60px 0;
-   }
-
-   .Gallery h3 {
-      font-size: 25px;
-   }
-
-   .Gallery img {
-      border: 2px solid var(--Highlight);
-      margin-top: 5px;
-   }
-
-   .GalleryLink {
-      background-color: var(--Highlight);
-      width: 100%;
-      margin: 0 auto;
-      margin-top: -5px;
-   }
-
-   .GalleryLink:before {
-      background-color: var(--Highlight);
-      border-top: 3px solid var(--Alabaster);
-      content: "View Details";
-      width: calc(100% - 20px);
-      margin-top: -3px;
-   }
-
-   .FeaturedGallery {
-      color: var(--Alabaster);
-      background-color: var(--Highlight);
-      margin-bottom: 40px;
-      padding-top: 20px;
-   }
-
-   .FeaturedGallery img {
-      padding-top: 20px;
-   }
-
-   .FeaturedGallery h2 {
-      padding-bottom: 10px;
-      font-size: 25px;
-      text-transform: uppercase;
-   }
-
-   .FeaturedGallery h3 {
-      padding-bottom: 10px;
-   }
-
-   .FeaturedGallery p {
-      font-weight: 300;
-      padding: 0 30px;
-   }
-
-   .FeaturedGalleryLink {
-      background-color: var(--Highlight);
-      width: 100%;
-      margin: 0 auto;
-      margin-top: -3px;
-   }
-   .FeaturedGalleryLink:before {
-      border-top: 3px solid var(--Alabaster);
-      content: "View Details";
-      width: calc(100% - 20px);
-      margin-top: -3px;
-   }
-
-   /* FIRE PAGE */
-
-   .Fire {
-      background-color: var(--Alabaster);
-      padding: 20px 0;
-   }
-
-   .Fire h2 {
-      margin: 10px 0;
-      font-size: 30px;
-   }
-
-   .Fire p {
-      padding: 40px 20px;
-   }
-
-   /* Services Page */
-
-   .Services {
-      background-color: var(--Alabaster);
-      padding: 20px;
-   }
-
-   .Service {
-      margin-bottom: 20px;
-   }
-
-   /* About Page */
-
-   .About {
-      background-color: var(--Alabaster);
-      padding: 20px;
-   }
-
-   .About p {
-      margin: 40px 0;
-   }
-
-   /* Contact Page */
-
-   .Contact {
-      background-color: var(--Alabaster);
-      height: 50vh;
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-   }
-
-   .Contact h3 {
-      margin: 20px 0;
-   }
-
-   /* Testimonials Page */
-
-   .TestimonialsPage {
-      background-color: var(--Alabaster);
-      padding: 20px;
-   }
-
-   .TestimonialsPage h2 {
-      margin: 20px 0;
-   }
+  
 }

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { fireCollection } from "../FireIndex";
 
 export const FeaturedInstall = ({ page }) => {
-   return page == "home" ? (
+   return page === "home" ? (
       <div className='FeaturedHome'>
          <h2>Featured Install</h2>
          {fireCollection.map((fire) => {
@@ -21,6 +21,7 @@ export const FeaturedInstall = ({ page }) => {
                   </div>
                );
             }
+            return <></>;
          })}
          <Link className='FeaturedHomeLink' to={"/gallery"}>
             View Gallery
@@ -51,6 +52,7 @@ export const FeaturedInstall = ({ page }) => {
                   </div>
                );
             }
+            return <></>;
          })}
       </div>
    );

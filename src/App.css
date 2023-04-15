@@ -42,7 +42,7 @@ body {
 }
 
 p {
-   font-size: 20px;
+   font-size: 18px;
 }
 
 li {
@@ -213,7 +213,7 @@ a:active {
    align-items: center;
    justify-content: center;
    padding: 10px 0;
-   border-top: solid 3px var(--Alabaster);
+   width: 100%;
 }
 
 .Footer h2 {
@@ -226,6 +226,7 @@ a:active {
    padding: 10px 0;
    align-self: start;
    margin-left: 20px;
+   font-size: 15px;
 }
 
 .FooterExternalLinks svg {
@@ -254,7 +255,6 @@ a:active {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   box-shadow: inset 0px 5px 5px 0 rgba(71, 71, 71, 0.541);
    margin-bottom: 150px;
 }
 
@@ -303,7 +303,7 @@ a:active {
 .HomeContainer {
    margin-top: 230px;
    background-color: white;
-   padding: 5%;
+   padding: 30px 0;
 }
 
 .Intro {
@@ -312,14 +312,15 @@ a:active {
    align-items: center;
    justify-content: center;
    margin-bottom: 40px;
+   padding: 30px 5px;
 }
 
 .Intro p {
    padding: 0 20px;
+   margin-bottom: 20px;
 }
 
 .IntroAboutLink {
-   margin-top: 20px;
    padding: 15px 20px;
 }
 
@@ -330,58 +331,61 @@ a:active {
 
 .Hetas {
    padding: 10px;
-   margin: 20px auto;
-   border: 2px solid var(--Highlight);
+   margin: 20px 10px;
+   margin-bottom: 40px;
+   border: 1px solid var(--Highlight);
 }
 
 .FeaturedHome {
-   background-image: url("./Images/annie-spratt-L6GydBHMVGQ-unsplash.jpg");
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
-   border-top: 20px solid var(--Highlight);
-   border-bottom: 20px solid var(--Highlight);
-   border-right: 2px solid var(--Highlight);
-   border-left: 2px solid var(--Highlight);
-   color: white;
+   background-color: var(--Alabaster);
+   width: 100%;
+   color: var(--Highlight);
    height: fit-content;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: space-evenly;
-   margin: 40px 0;
-   text-shadow: 1px 1px 2px var(--Jet);
+   margin-right: 100px;
 }
 
 .FeaturedHomeLink {
-   box-shadow: 0px 0px 10px 0.1px rgba(155, 155, 155, 0.459);
-   margin-bottom: 20px;
+   border: 3px double var(--Alabaster);
+   margin: 10px 0;
 }
 
 .FeaturedHomeLink:before {
    content: "view gallery";
+   background-color: var(--Alabaster);
+   color: var(--Highlight);
 }
 
 .FeaturedHome img {
-   width: 92%;
+   width: 100%;
    height: 80vw;
    object-fit: cover;
    object-position: 0 50%;
-   box-shadow: -10px 5px 5px 5px rgba(0, 0, 0, 0.322);
-   margin-bottom: 20px;
+}
+
+.FeaturedHome img:hover {
+   cursor: pointer;
 }
 
 .FeaturedHome p {
-   padding: 20px 10px;
+   padding: 20px;
 }
 
 .FeaturedHome h2 {
    padding: 20px 10px;
    text-transform: uppercase;
+   font-size: 30px;
 }
 
 .FeaturedHome h3 {
-   font-size: 23px;
+   font-size: 25px;
+}
+
+.TestimonialHome {
+   margin: 60px 0;
 }
 
 .TestimonialHome p {
@@ -394,6 +398,7 @@ a:active {
 
 .Testimonial h3 {
    font-family: "Sacramento", cursive;
+   font-size: 25px;
 }
 
 .Testimonial svg {
@@ -421,7 +426,7 @@ a:active {
 /* GALLERY */
 
 .Gallery {
-   padding: 40px 5px;
+   padding: 40px 0;
    padding-bottom: 10px;
    background-color: var(--Alabaster);
    box-shadow: inset 0px 0px 5px -1px var(--Jet);
@@ -436,7 +441,6 @@ a:active {
 }
 
 .Gallery img {
-   border: 2px solid var(--Highlight);
    margin-top: 5px;
 }
 
@@ -460,6 +464,7 @@ a:active {
    background-color: var(--Highlight);
    margin-bottom: 40px;
    padding-top: 20px;
+   border: 3px double var(--Alabaster);
 }
 
 .FeaturedGallery img {
@@ -499,6 +504,7 @@ a:active {
 .Fire {
    background-color: var(--Alabaster);
    padding: 20px 0;
+   box-shadow: inset 0px 0px 5px -1px var(--Jet);
 }
 
 .Fire h2 {
@@ -526,9 +532,6 @@ a:active {
 .About {
    background-color: var(--Alabaster);
    padding: 20px;
-}
-
-.About h2 {
 }
 
 .About p {
